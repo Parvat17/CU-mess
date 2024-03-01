@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Daily Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif; 
+      margin: 0;
+      padding: 0;       
+       background-image: linear-gradient(90deg, #c31432 , #240b36 );
+        height: 200px;
+    }
+    .menu {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #ffffff;
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+
+    .meal {
+      margin: 10px;
+      padding: 15px;
+      background-color: #CCCCCC;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 25px;
+
+    }
+
+    h3{
+      text-decoration: underline;
+      font-weight: bolder;
+    }
+    .button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .back{
+      height: 30px;
+      padding-left: 10px;
+      border-radius: 60%;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50px;
+      gap: 10px;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin-top: 10px;
+    }
+    .btn{
+      width: 50%;
+    }
+    .c1{
+      padding: 0;
+      margin: 0;
+    }
+    .icon{
+      margin-top: 20px;
+      height: 160px;
+      width: 160px;
+      border-radius: 60px;
+    }
+  </style>
+</head>
+<body>
+<div class="c1">
+  <div class="menu">
+    <h2>Tomorrow's Menu</h2>
+    <div class="meal" id="breakfast">
+      <h3>Breakfast:</h3>
+    </div>
+    <div class="meal" id="lunch">
+      <h3>Lunch:</h3>
+    </div>
+    <div class="meal" id="snacks">
+      <h3>Snacks:</h3>
+    </div>
+    <div class="meal" id="dinner">
+      <h3>Dinner:</h3>
+    </div>
+    <button class="button" onclick="showTodayMenu()"> <img src="./assets/images/arrow-clockwise.svg" alt=""></button>
+    <div class="container">
+      <a href="./index.html"><button type="button" class="btn btn-outline-warning "> <img src="./assets/images/arrow-left.svg"  width="30px" alt=""></button></a>
+    </div>
+  </div>
+</div>
+  <script>
+    function showTodayMenu() {
+      var currentDate = new Date();
+      var day = currentDate.getDate()+1;
+
+      // Replace the following with your actual menu data
+      var menuData = {
+        "1": {
+          breakfast: "Boys : Namkeen Sewai , Masala Aloo Sandwich , Ketchup , Milk , Tea<br><br> Girls : Aloo Chana Chat",
+          lunch: "Dal Panchmel , Mushroom Matar , Rice , Roti , Boondi Raita , Salad , Pickle",
+          snacks: "NC : Samosa , Tea  <br><br> Zakir : Veg Pattie , Tea <br><br> Girls : Rusk , Tea",
+          dinner: "Shahi Paneer , Kadai Chicken , Moong Dal , Rice , Roti , Pickle , Salad"
+        },
+        "2": {
+          breakfast: "Stuffed Paratha , Curd , Butter , Tea , Pickle",
+          lunch: "Black Chana , Ghiya Masala , Rice , Roti , Cucumber Raita , Salad , Pickle",
+          snacks: "NC : Veg Pattie , Tea  <br><br> Zakir :  Cake , Tea <br><br> Girls : Namak Pare , Tea",
+          dinner: "Kesari Halwa , Mix Veg , Chana Dal , Rice , Roti , Salad , Pickle"
+        },
+        "3": {
+          breakfast: "Chole Bhature , Tea , Pickle",
+          lunch: "Veg Biryani , Salan , Roti , Mix Raita , Salad , Pickle",
+          snacks: "NC & Zakir : Bread Pakora , Tea <br><br> Girls : Cake , Tea",
+          dinner: "Chocolate , Aloo Gobhi , Toor Dal , Rice , Roti , Salad , Pickle"
+        },
+        "4": {
+          breakfast: "Pav Bhaji , Milk , Tea ",
+          lunch: "Aloo Matar , Kadhi Gatta , Rice , Roti , Salad , Pickle",
+          snacks: "NC : Matthi , Tea  <br><br> Zakir : Rusk , Tea <br><br> Girls : Matthi , Tea",
+          dinner: "Egg Masala , Paneer , Lobiya Dal , Rice , Roti , Salad , Pickle"
+        },
+        "5": {
+          breakfast: "Plain Paratha , Subzi , Tea , Pickle",
+          lunch: "Rajma , Sev tamatar , Rice , Roti , Cucumber Raita , Salad , Pickle",
+          snacks: "NC : Sweet Roll , Tea  <br><br> Zakir : Namak Pare , Tea <br><br> Girls : Biscuits , Tea",
+          dinner: "Aloo Capsicum , Dal Makhani , Rice , Roti , Salad , Pickle , Kheer"
+        },
+        "6": {
+          breakfast: "Omelette , Bread , Butter , Jam , Dalia , Banana , Tea ",
+          lunch: "Black Chana , Nutry Matar , Rice , Roti , Boondi Raita , Salad , Pickle",
+          snacks: "NC : Mix Pakora , Tea  <br><br> Zakir : Veg Pattie , Tea <br><br> Girls : Mix Pakora , Tea",
+          dinner: "Dal Palak , Mix Veg , Salad , Roti , Rice"
+        },
+        "7": {
+          breakfast: "Besan Ka Chilla , Ketchup , Chutney , Tea , Milk , Poha",
+          lunch: "Dhaba Dal , Aloo Baingan , Jeera Rice , Roti , Ghiya Raita , Salad , Pickle",
+          snacks: "NC : Namkeen , Tea  <br><br> Zakir : Sweet Roll , Tea <br><br> Girls : Samosa , Tea",
+          dinner: "Hara Kaddu , White Chana , Rice , Roti , Salad , Pickle"
+        },
+        "8": {
+          breakfast: "Boys : Aloo Chana , Puri , Tea , Pickle <br><br>Girls : Chutney ",
+          lunch: "Sabut Masoor Dal , Kadhai Veg , Rice , Roti , Cucumber Raita , Salad , Pickle",
+          snacks: "NC : Veg Pattie , Tea  <br><br> Zakir : Samosa , Tea <br><br> Girls : Rusk , Tea",
+          dinner: "Paneer , Chili Chicekn , Dal , Rice , Roti , Salad , Pickle"
+        },
+        "9": {
+          breakfast: "Upma , Corn Flakes , Tea , Milk",
+          lunch: "Dal Panchmel , Mushroom Methi , Rice , Roti , Boondi Raita , Salad , Pickle",
+          snacks: "NC : Cake , Tea  <br><br> Zakir : Namkeen , Tea <br><br> Girls : Veg Pattie , Tea",
+          dinner: "Gulab Jamun , Jeera Aloo , Chana Dal , Rice , Roti , Salad , Pickle "
+        },
+        "10": {
+          breakfast: "Chole Bhature , Tea , Pickle",
+          lunch: "Khichdi , Curd , Aloo Jeera , Roti , Salad , Pickle",
+          snacks: "NC & Zakir: Bread Pakoda , Tea <br><br> Girls : Sweet Roll , Tea",
+          dinner: "Aloo Gajar Matar , Toor Dal , Rice , Roti , Salad , Pickle"
+        },
+        "11": {
+          breakfast: "Pav Bhaji , Milk , Tea ",
+          lunch: "Kadhi Pakoda , Aloo Matar , Rice , Roti , Salad , Pickle",
+          snacks: "NC & Zakir : Rusk , Tea <br><br> Girls : Mix Pakoda , Tea",
+          dinner: "Matar Paneer , Andra Egg Curry , Lobiya Dal , Rice , Roti , Salad , Pickle"
+        },
+        "12": {
+          breakfast: "Subzi , Puri, Tea , Pickle",
+          lunch: "Rajma , Sev tamatar , Rice , Roti , Cucumber Raita , Salad , Pickle",
+          snacks: "NC : Namkeen , Tea  <br><br> Zakir : Veg Pattie , Tea <br><br> Girls : Bread Pakoda , Tea",
+          dinner: "Kheer , Aloo Baingan , Matar Toor Dal , Rice , Roti , Salad , Pickle"
+        },
+        "13": {
+          breakfast: "Omelette , Bread , Butter , Jam , Dalia , Banana , Tea ",
+          lunch: "Black Chana , Nutry Matar , Rice , Roti , Mix Raita , Salad , Pickle",
+          snacks: "NC : Chips , Tea  <br><br> Zakir : Danish Bun , Tea <br><br> Girls : Danish Bun , Tea",
+          dinner: "Veg Noodles , Veg Manchurian , Malka Masoor Dal , Roti , Rice , Ketchup"
+        },
+        "14": {
+          breakfast: "Dal Paratha , Curd , Butter , Tea , Pickle",
+          lunch: "Dhaba Dal , Bharta , Jeera Rice , Roti , Boondi Raita , Salad , Pickle",
+          snacks: "NC : Matthi , Tea  <br><br> Zakir : Biscuit , Tea <br><br> Girls : Biscuit , Tea",
+          dinner: "Sewaiya , Hara Kaddu , White Chana , Rice , Roti , Salad , Pickle"
+        },
+        "15": {
+          breakfast: "Poha , Corn Flakes , Tea , Milk , Ketchup <br><br>Girls : Papdi Chaat",
+          lunch: "Kadhi , Aloo Gajar Matar , Rice , Roti , Salad , Pickle",
+          snacks: "NC : Danish Bun , Tea  <br><br> Zakir : Samosa , Tea <br><br> Girls : Matthi , Tea",
+          dinner: "Karachi Paneer , Chicken Curry , G-Moong Dal , Rice , Roti , Salad , Pickle"
+        }
+      };
+
+      document.getElementById("breakfast").innerHTML = "<h3>Breakfast:</h3><p>" + menuData[day].breakfast + "</p>";
+      document.getElementById("lunch").innerHTML = "<h3>Lunch:</h3><p>" + menuData[day].lunch + "</p>";
+      document.getElementById("snacks").innerHTML = "<h3>Snacks:</h3><p>" + menuData[day].snacks + "</p>";
+      document.getElementById("dinner").innerHTML = "<h3>Dinner:</h3><p>" + menuData[day].dinner + "</p>";
+    
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelector(".button").click();
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
