@@ -19,11 +19,11 @@
   margin: 0;
   padding: 0;       
   background-color: #d8cccc;
-  height: 100vh; /* Adjust the height as needed */
+  /* Adjust the height as needed */
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  /* Subtle shadow */
 }
 
     .mt-3{
@@ -42,10 +42,21 @@
         border-radius: 10px;
     }
 .bt1{
-  margin-top: 20px;
+
+  margin-top: 0px;
   background-color: #001f3f;
   color: #297a10;
   font-size: x-large;
+  margin-bottom: 10px;
+}
+.btc{
+  display: grid;
+
+  justify-content: center;
+  
+
+  grid-template-columns: 50%;
+  grid-template-rows: 50%;
 }
   </style>
 </head>
@@ -53,8 +64,11 @@
   <div class="container mt-5">
     <h2 class="text-center">Choose a date!!</h2>
     <div id="calendar" class="text-center"></div>
-    <a href="./index.html"><button type="button" class="btn btn-outline-warning bt1">For Today's Menu</button></a>
+
     <div id="selected-date" class="mt-3"></div>
+    <div class="btc">
+      <a href="./index.html"><button type="button" class="btn btn-outline-warning bt1">For Today's Menu</button></a>
+    </div>
   </div>
 
   <script>
