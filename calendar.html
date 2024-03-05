@@ -29,9 +29,10 @@
     .mt-3{
         text-decoration: underline;
         text-align: justify;
+        border: 2px black solid;
         border-radius: 10px;
         font-weight: bolder;
-        background-color: #9b8787;
+        background-color: #b3b3b0;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -46,6 +47,7 @@
   display: grid;
   grid-template-rows: 100%;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .bt1{
@@ -56,6 +58,10 @@
   margin-bottom: 10px;
 }
 
+h4{
+  color: #22a757;
+  font-size:medium;
+    }
   </style>
 </head>
 <body>
@@ -169,17 +175,30 @@
       const month = date.getMonth() + 1; // Months are zero-based
       const day = date.getDate();
       const key = `${year}-${month < 10 ? '0' : ''}${month}-${day < 10 ? '0' : ''}${day}`;
+      var day1 = date.getDay();
 
       const selectedDateElement = document.getElementById('selected-date');
       if (menuData[key]) {
-        // Display menu data for the selected date
-        selectedDateElement.innerHTML = `
+
+        if(day1>0 && day1<6 ){
+          selectedDateElement.innerHTML = `
           <p><strong>Selected Date:</strong> ${date.toDateString()}</p>
-          <h3>Breakfast: </h3><p>${menuData[key].breakfast}</p>
-          <h3>Lunch:</h3><p>${menuData[key].lunch}</p>
-          <h3>Snacks:</h3><p>${menuData[key].snacks}</p>
-          <h3>Dinner:</h3><p>${menuData[key].dinner}</p>
-        `;
+          <h3>Breakfast:<h4>(7:30 AM - 9:00 AM)</h4></h3><p>${menuData[key].breakfast}</p>
+          <h3>Lunch:</h3><h4>(12:00 PM - 1:45 PM)</h4><p>${menuData[key].lunch}</p>
+          <h3>Snacks:</h3><h4>(4:30 PM - 5:15 PM)</h4><p>${menuData[key].snacks}</p>
+          <h3>Dinner:</h3><h4>(7:30 PM - 9:00 PM)</h4><p>${menuData[key].dinner}</p>
+        `; 
+        }
+        else{
+          selectedDateElement.innerHTML = `
+          <p><strong>Selected Date:</strong> ${date.toDateString()}</p>
+          <h3>Breakfast: </h3><h4>(8:00 AM - 9:30 AM)</h4><p>${menuData[key].breakfast}</p>
+          <h3>Lunch:</h3><h4>(12:30 PM - 2:00 PM)</h4><p>${menuData[key].lunch}</p>
+          <h3>Snacks:</h3><h4>(4:30 PM - 5:15 PM)</h4><p>${menuData[key].snacks}</p>
+          <h3>Dinner:</h3><h4>(7:30 PM - 9:00 PM)</h4><p>${menuData[key].dinner}</p>`; 
+        }
+        // Display menu data for the selected date
+
       } else {
         // No menu data for the selected date
         selectedDateElement.innerHTML = `

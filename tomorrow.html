@@ -98,6 +98,9 @@
       
     }
 
+    h4{
+      color: #22a757;
+    }
   </style>
 </head>
 <body>
@@ -127,6 +130,7 @@
     function showTodayMenu() {
       var currentDate = new Date();
       var day = currentDate.getDate()+1;
+      var day1= currentDate.getDay()+1;
 
       // Replace the following with your actual menu data
       var menuData = {
@@ -152,7 +156,7 @@
           breakfast: "Pav Bhaji , Milk , Tea ",
           lunch: "Aloo Matar , Kadhi Gatta , Rice , Roti , Salad , Pickle",
           snacks: "NC : Matthi , Tea  <br> Zakir : Rusk , Tea <br> Girls : Matthi , Tea",
-          dinner: "Egg Masala , Paneer Nilgiri Korma , Lobiya Dal , Rice , Roti , Salad , Pickle"
+          dinner: "Egg Masala , Paneer , Lobiya Dal , Rice , Roti , Salad , Pickle"
         },
         "5": {
           breakfast: "Plain Paratha , Subzi , Tea , Pickle",
@@ -221,12 +225,20 @@
           dinner: "Karachi Paneer , Chicken Curry , G-Moong Dal , Rice , Roti , Salad , Pickle"
         }
       };
-
-      document.getElementById("breakfast").innerHTML = "<h3>Breakfast:</h3><p>" + menuData[day].breakfast + "</p>";
-      document.getElementById("lunch").innerHTML = "<h3>Lunch:</h3><p>" + menuData[day].lunch + "</p>";
-      document.getElementById("snacks").innerHTML = "<h3>Snacks:</h3><p>" + menuData[day].snacks + "</p>";
-      document.getElementById("dinner").innerHTML = "<h3>Dinner:</h3><p>" + menuData[day].dinner + "</p>";
-    
+      if(day1>0 && day1<6 )
+      {
+        document.getElementById("breakfast").innerHTML = "<h3>Breakfast:</h3><h4>(7:30 AM - 9:00 AM)</h4><p>" + menuData[day].breakfast + "</p>";
+      document.getElementById("lunch").innerHTML = "<h3>Lunch:</h3><h4>(12:00 PM - 1:45 PM)</h4><p>" + menuData[day].lunch + "</p>";
+      document.getElementById("snacks").innerHTML = "<h3>Snacks:</h3><h4>(4:30 PM - 5:15 PM)</h4><p>" + menuData[day].snacks + "</p>";
+      document.getElementById("dinner").innerHTML = "<h3>Dinner:</h3><h4>(7:30 PM - 9:00 PM)</h4><p>" + menuData[day].dinner + "</p>";
+      }
+      else
+      {
+        document.getElementById("breakfast").innerHTML = "<h3>Breakfast:</h3><h4>(8:00 AM - 9:30 AM)</h4><p>" + menuData[day].breakfast + "</p>";
+      document.getElementById("lunch").innerHTML = "<h3>Lunch:</h3><h4>(12:30 PM - 2:00 PM)</h4><p>" + menuData[day].lunch + "</p>";
+      document.getElementById("snacks").innerHTML = "<h3>Snacks:</h3><h4>(4:30 PM - 5:15 PM)</h4><p>" + menuData[day].snacks + "</p>";
+      document.getElementById("dinner").innerHTML = "<h3>Dinner:</h3><h4>(7:30 PM - 9:00 PM)</h4><p>" + menuData[day].dinner + "</p>";
+      }
     }
     document.addEventListener("DOMContentLoaded", function() {
       document.querySelector(".button").click();
