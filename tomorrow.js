@@ -5,7 +5,7 @@ function showTodayMenu() {
 
     // Replace the following with your actual menu data
     var menuData = {
-      /*"1": {
+      "1": {
         breakfast: "Boys : Namkeen Sewai , Masala Aloo Sandwich , Ketchup , Milk , Tea<br> Girls : Aloo Chana Chat",
         lunch: "Dal Panchmel , Mushroom Matar , Rice , Roti , Boondi Raita , Salad , Pickle",
         snacks: "NC : Samosa , Tea  <br> Zakir : Veg Pattie , Tea <br> Girls : Rusk , Tea",
@@ -100,7 +100,7 @@ function showTodayMenu() {
         lunch: "NA",
         snacks: "NA",
         dinner: "NA"
-      },*/
+      },
       "16": {
         breakfast: "Stuffed Paratha , Curd , Butter , Tea , Pickle",
         lunch: "Dal Panchmel , Aloo Capsicum , Rice , Roti , Boondi Raita , Salad , Pickle",
@@ -117,13 +117,13 @@ function showTodayMenu() {
         breakfast: "Matar Kulcha , Milk , Tea , Pickle",
         lunch: "Kadhi Pakoda , Aloo Matar , Rice , Roti , Salad , Pickle",
         snacks: "NC : Mix Pakora , Tea  <br> Zakir :  Namkeen , Tea <br> Girls : Biscuits , Tea",
-        dinner: "Chocolate , Aloo Gobhi , Toor Dal , Rice , Roti , Salad , Pickle"
+        dinner: "Egg Masala , Paneer Makhani , Lobiya Dal , Rice , Roti , Salad , Pickle"
       },
       "19": {
         breakfast: "Boys : Besan Ka Chilla , Ketchup , Chutney , Tea , Milk , Poha <br> Girls : Aloo Chana Chaat",
         lunch: "Rajma , Sev tamatar , Rice , Roti , Cucumber Raita , Salad , Pickle",
         snacks: "NC : Namkeen , Tea  <br> Zakir : Samosa , Tea <br> Girls : Sweet Roll , Tea",
-        dinner: "Egg Masala , Paneer Nilgiri Korma , Lobiya Dal , Rice , Roti , Salad , Pickle"
+        dinner: "Chocolate , Toor Dal , Mix Veg , Salad , Roti , Jeera Rice"
       },
       "20": {
         breakfast: "Omelette , Bread , Butter , Jam , Dalia , Banana , Tea ",
@@ -135,67 +135,67 @@ function showTodayMenu() {
         breakfast: "Aloo Chana , Poori , Tea , Pickle",
         lunch: "White Chana , Bharta , Rice , Boondi raita , Salad , Roti , Pickle",
         snacks: "NC : Sweet Roll , Tea  <br> Zakir : Mathi , Tea <br> Girls : Veg Pattie , Tea",
-        dinner: "Dal Palak , Mix Veg , Salad , Roti , Rice"
+        dinner: "Kheer , Aloo Gobhi , Rajma , Jeera Rice , Roti , Salad , Pickle"
       },
       "22": {
         breakfast: "Namkeen Sewai , Coleslaw Sandwich , Ketchup , Milk , Tea",
         lunch: "Dal Panchmel, Kofta Curry , Rice , Roti , Ghiya Raita , Salad , Pickle",
         snacks: "NC : Biscuit , Tea  <br> Zakir : Biscuit , Tea <br> Girls : Namkeen , Tea",
-        dinner: "Hara Kaddu , White Chana , Rice , Roti , Salad , Pickle"
+        dinner: "Matar Paneer , Kerela Chicken Curry , G-Moong Dal , Rice , Roti , Salad , Pickle"
       },
       "23": {
         breakfast: "Boys : Upma , Corn Flakes , Tea , Milk <br>Girls : Papdi Chaat",
         lunch: "Sabut Masoor Dal , Mushroom Matar ,  Jeera Rice , Roti , Cucumber Raita , Salad , Pickle",
         snacks: "NC : Rusk , Tea  <br> Zakir : Veg Pattie , Tea <br> Girls : Matthi , Tea",
-        dinner: "Paneer , Chili Chicekn , Dal , Rice , Roti , Salad , Pickle"
+        dinner: "Sewaiya , Jeera Aloo , Maha Chana Dal , Peas Pulao , Roti , Salad , Pickle "
       },
       "24": {
         breakfast: "Chole Bhature , Tea , Pickle",
         lunch: "Khichdi , Curd , Aloo Jeera , Roti , Salad , Pickle",
         snacks: "NC : Bread Pakora , Tea  <br> Zakir : Bread Pakora , Tea <br> Girls : Rusk , Tea",
-        dinner: "Gulab Jamun , Jeera Aloo , Chana Dal , Rice , Roti , Salad , Pickle "
+        dinner: "Aloo Gobhi , Toor Dal , Nutry Pulao , Roti , Salad , Pickle"
       },
       "25": {
         breakfast: "Pav Bhaji , Milk , Tea",
         lunch: "Aloo Matar , Kadhi Gatta , Rice , Roti , Salad , Pickle",
         snacks: "NC : Namkeen , Tea <br>Zakir : Namak Pare , Tea<br> Girls : Namak Pare , Tea",
-        dinner: "Aloo Gajar Matar , Toor Dal , Rice , Roti , Salad , Pickle"
+        dinner: "Kadahi Paneer , Egg Masala , Lobiya Dal , Rice , Roti , Salad , Pickle"
       },
       "26": {
         breakfast: "Dal Paratha , Curd , Butter , Tea , Pickle",
         lunch: "Rajma , Sev tamatar , Rice , Roti , Cucumber Raita , Salad , Pickle",
         snacks: "NC : Chips , Tea <br>Zakir : Namkeen , Tea<br> Girls : Chips , Tea",
-        dinner: "Matar Paneer , Andra Egg Curry , Lobiya Dal , Rice , Roti , Salad , Pickle"
+        dinner: "Gulab Jamun , Kadhai Veg , Chana Dal ,Jeera Rice , Roti , Pickle , Salad"
       },
       "27": {
         breakfast: "Omelette , Bread , Butter , Jam , Dalia , Banana , Tea ",
         lunch: "Black Chana , Nutry Matar , Rice , Roti , Mix Raita , Salad , Pickle",
         snacks: "NC : Danish Bun , Tea  <br> Zakir : Danish Bun , Tea <br> Girls : Biscuit , Tea",
-        dinner: "Kheer , Aloo Baingan , Matar Toor Dal , Rice , Roti , Salad , Pickle"
+        dinner: "Veg Noodles , Veg Manchurian , Palak Dal , Roti , Rice , Ketchup"
       },
       "28": {
         breakfast: "Boys : Poha , Corn Flakes , Tea , Milk , Ketchup <br>Girls : Chutney",
         lunch: "Sabut Masoor Dal , Mushroom Matar , Jeera Rice , Roti , Ghiya Raita , Salad , Pickle",
         snacks: "NC : Veg Pattie , Tea  <br> Zakir : Biscuit , Tea <br> Girls : Samosa , Tea",
-        dinner: "Veg Noodles , Veg Manchurian , Malka Masoor Dal , Roti , Rice , Ketchup"
+        dinner: "Soan Papdi , Hara Kaddu , White Chana , Rice , Roti , Salad , Pickle"
       },
       "29": {
         breakfast: "Subzi , Puri, Tea , Pickle",
         lunch: "Black Dal Tadka , Aloo Baingan , Rice , Roti , Mix Raita , Salad , Pickle",
         snacks: "NC : Mix Pakoda , Tea  <br> Zakir : Mix Pakoda , Tea <br> Girls : Cake , Tea",
-        dinner: "Sewaiya , Hara Kaddu , White Chana , Rice , Roti , Salad , Pickle"
+        dinner: "Chilli Chicken , Paneer Nilgiri Korma , G-Moong Dal , Rice , Roti , Salad , Pickle"
       },
       "30": {
         breakfast: "Namkeen Sewai , Masala Aloo Sandwich , Ketchup , Milk , Tea",
         lunch: "Rajma , Tamaloo , Boondi Raita , Rice , Roti , Salad , Pickle",
         snacks: "NC : Namak Pare , Tea  <br> Zakir : Sweet Roll , Tea <br> Girls : Danish Bun , Tea",
-        dinner: "Karachi Paneer , Chicken Curry , G-Moong Dal , Rice , Roti , Salad , Pickle"
+        dinner: "Sewaiya , Aloo Gajar Matar , Maha Chana Dal , Peas Pulao , Roti , Salad , Pickle"
       },
       "31": {
         breakfast: "Chole Bhature , Tea , Pickle",
         lunch: "Veg Biryani , Salan , Roti , Mix Raita , Salad , Pickle",
         snacks: "NC : Biscuit , Tea  <br> Zakir : Chips , Tea <br> Girls : Mix Pakoda , Tea",
-        dinner: "Karachi Paneer , Chicken Curry , G-Moong Dal , Rice , Roti , Salad , Pickle"
+        dinner: "Aloo Gobhi , Toor Dal , Nutry Pulao , Roti , Salad , Pickle"
       }
     };
     if(day1>0 && day1<6 )
