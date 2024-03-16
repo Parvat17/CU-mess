@@ -103,14 +103,14 @@ function showTodayMenu() {
       },*/
       "16": {
     breakfast: "Stuffed Paratha , Curd , Butter , Tea , Pickle",
-    lunch: "Dal Panchmel , Mushroom Matar , Rice , Roti , Boondi Raita , Salad , Pickle",
-    snacks: "NC : Samosa , Tea  <br> Zakir : Veg Pattie , Tea <br> Girls : Rusk , Tea",
-    dinner: "Shahi Paneer , Kadai Chicken , Moong Dal , Rice , Roti , Pickle , Salad"
+    lunch: "Dal Panchmel , Aloo Capsicum , Rice , Roti , Boondi Raita , Salad , Pickle",
+    snacks: "NC : Matthi , Tea  <br> Zakir : Cake , Tea <br> Girls : Namkeen , Tea",
+    dinner: "Kesari Halwa , Tamaloo , Dal Makhani , Rice , Roti , Pickle , Salad"
   },
   "17": {
     breakfast: "Chole Bhature , Tea , Pickle",
-    lunch: "Black Chana , Ghiya Masala , Rice , Roti , Cucumber Raita , Salad , Pickle",
-    snacks: "NC : Veg Pattie , Tea  <br> Zakir :  Cake , Tea <br> Girls : Namak Pare , Tea",
+    lunch: "Veg Biryani , Salan , Roti , Mix Raita , Salad , Pickle",
+    snacks: "NC : Rusk , Tea  <br> Zakir :  Bread Pakora , Tea <br> Girls : Bread Pakora , Tea",
     dinner: "Kesari Halwa , Mix Veg , Chana Dal , Rice , Roti , Salad , Pickle"
   },
   "18": {
@@ -144,7 +144,7 @@ function showTodayMenu() {
     dinner: "Hara Kaddu , White Chana , Rice , Roti , Salad , Pickle"
   },
   "23": {
-    breakfast: "Upma , Corn Flakes , Tea , Milk",
+    breakfast: "Boys : Upma , Corn Flakes , Tea , Milk <br>Girls : Papdi Chaat",
     lunch: "Sabut Masoor Dal , Kadhai Veg , Rice , Roti , Cucumber Raita , Salad , Pickle",
     snacks: "NC : Veg Pattie , Tea  <br> Zakir : Samosa , Tea <br> Girls : Rusk , Tea",
     dinner: "Paneer , Chili Chicekn , Dal , Rice , Roti , Salad , Pickle"
