@@ -12,10 +12,10 @@ function showTodayMenu() {
         dinner: "Shahi Paneer , Kadai Chicken , Moong Dal , Rice , Roti , Pickle , Salad"
       },
       "2": {
-        breakfast: "Stuffed Paratha , Curd , Butter , Tea , Pickle",
-        lunch: "Black Chana , Ghiya Masala , Rice , Roti , Cucumber Raita , Salad , Pickle",
-        snacks: "NC : Veg Pattie , Tea  <br> Zakir :  Cake , Tea <br> Girls : Namak Pare , Tea",
-        dinner: "Kesari Halwa , Mix Veg , Chana Dal , Rice , Roti , Salad , Pickle"
+        breakfast: "Plain Paratha , Subzi , Tea , Pickle",
+        lunch: "Rajma , Ghiya Sev Tamatar , Rice , Roti , Chaas , Salad , Pickle",
+        snacks: "NC : Sweet Roll , Tea  <br> Zakir : Namak Pare , Tea <br> Girls : Biscuit , Tea",
+        dinner: "Kheer , Aloo Amritsari , Dal Makhani , Rice , Roti , Salad , Pickle"
       },
       "3": {
         breakfast: "Chole Bhature , Tea , Pickle",
