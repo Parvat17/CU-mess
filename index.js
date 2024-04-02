@@ -6,22 +6,22 @@ function showTodayMenu() {
     // Replace the following with your actual menu data
     var menuData = {
       "1": {
-        breakfast: "Boys : Namkeen Sewai , Masala Aloo Sandwich , Ketchup , Milk , Tea<br> Girls : Aloo Chana Chat",
-        lunch: "Dal Panchmel , Mushroom Matar , Rice , Roti , Boondi Raita , Salad , Pickle",
-        snacks: "NC : Samosa , Tea  <br> Zakir : Veg Pattie , Tea <br> Girls : Rusk , Tea",
-        dinner: "Shahi Paneer , Kadai Chicken , Moong Dal , Rice , Roti , Pickle , Salad"
+        breakfast: "Boys : Namkeen Sewai , Coleslaw Sandwich , Ketchup , Milk , Tea<br> Girls : Papdi Chat",
+        lunch: "Aloo Capsicum , Kadhi Gatta , Rice , Roti , Salad , Pickle",
+        snacks: "NC : Matthi , Tea  <br> Zakir : Rusk , Tea <br> Girls : Matthi , Tea",
+        dinner: "Egg Masala , Panner Kadhai , Lobiya Dal , Rice , Roti , Pickle , Salad"
       },
       "2": {
         breakfast: "Plain Paratha , Subzi , Tea , Pickle",
-        lunch: "Rajma , Ghiya Sev Tamatar , Rice , Roti , Chaas , Salad , Pickle",
-        snacks: "NC : Sweet Roll , Tea  <br> Zakir : Namak Pare , Tea <br> Girls : Biscuit , Tea",
+        lunch: "Rajma , Sev Tamatar , Rice , Roti , Chaas , Salad , Pickle",
+        snacks: "NC : Sweet Roll , Tea  <br> Zakir :  Namak Pare , Tea <br> Girls : Biscuit , Tea",
         dinner: "Kheer , Aloo Amritsari , Dal Makhani , Rice , Roti , Salad , Pickle"
       },
       "3": {
-        breakfast: "Chole Bhature , Tea , Pickle",
-        lunch: "Veg Biryani , Salan , Roti , Mix Raita , Salad , Pickle",
-        snacks: "NC & Zakir : Bread Pakora , Tea <br> Girls : Cake , Tea",
-        dinner: "Chocolate , Aloo Gobhi , Toor Dal , Rice , Roti , Salad , Pickle"
+        breakfast: "Omelette , Bread , Butter , Jam , Dalia , Banana , Tea",
+        lunch: "Black Chana , Nutry Matar , Roti , Boondi Raita , Salad , Pickle",
+        snacks: "NC : Mix Pakora , Tea <br>Zakir : Veg Pattie , Teas <br> Girls : Cake , Tea",
+        dinner: "Dal Panchmel , Mix veg , Rice , Roti , Salad , Pickle"
       },
       "4": {
         breakfast: "Pav Bhaji , Milk , Tea ",
